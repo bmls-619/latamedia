@@ -1,6 +1,5 @@
 import React,{useState, useRef} from "react";
 import ReactPlayer from 'react-player';
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import Col from 'react-bootstrap/Col';
