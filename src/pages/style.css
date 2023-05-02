@@ -1,0 +1,86 @@
+/*This makes video container responsive*/
+.video-player-container {
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.audio-player audio {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 10%;
+    left: 55%;
+    
+    /*background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 8px;*/
+}
+
+@media only screen and (max-width:800px) {
+
+    /* For tablets: */
+    .video-player-container {
+        width: 80%;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    /* For mobile phones: */
+    .video-player-container {
+        width: 120%;
+    }
+}
+
+.bg-image {
+    background-image: url("./wp5309309-cool-retina-display-wallpapers.jpg");
+    background-size: cover;
+    background-position: center;
+    /*background-color:silver;*/
+    /*height: 100vh;*/
+}
+
+.bg-image1 {
+    /*background-image: url("./wp5309309-cool-retina-display-wallpapers.jpg");*/
+    background-color:rgb(134, 196, 243);
+    height: 100vh;
+}
+
+h5{
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color: rgb(17, 16, 16);
+    font-size:1.5em;
+    background-color: #edeef470;
+    width: 7.8em;
+    display: flex;
+    justify-content: space-between;
+    z-index: 12;
+}
+
+.logo-center {
+
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    top: 35%;
+    left: 55%
+}
+
+.custom-link {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color: rgb(17, 16, 16);
+    font-size: 17px;
+    background-color: #edeef470;
+    text-decoration:none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.tab-button:hover{
+    background-color: rgb(9, 113, 216);
+}
