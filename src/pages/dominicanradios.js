@@ -23,13 +23,14 @@ import LaBakanaFM from './logos/labakana.png';
 import ZolFM from './logos/zolfm.png';
 import SonidoSuaveFM from './logos/sonidosuave.png';
 import RumbaFM from './logos/rumba985fm.png'
+import PowerFM from './logos/power-103.png'
 
 const liveRadioData = [
 
      {amor: "https://radio5.domint.net:8222/stream"},
      {cdn: "https://play.cdnradio.com.do/cdnlive"},
      {puraVida: "https://sonic.radiostreaminglatino.com/8294/stream"},
-     {independencia: "http://stream.grupotelemicro.com:9303/;"},
+     {independencia: "https://stream.radiojar.com/nc893hafc8zuv"},
      {kq: "https://radio.yaservers.com:9990/stream/1/"},
      {laKalle: "https://radio.telemicro.com.do/lakallesantiago"},
      {ritmo: "https://node-10.zeno.fm/r66bf38wd0quv?1681778450"},
@@ -41,7 +42,8 @@ const liveRadioData = [
      {mortal: "https://stream.radiojar.com/x84tcy2wm2zuv"},
      {laBakana: "https://radio4.domint.net:8030/stream"},
      {zol: "https://rss3.domint.net:8010/stream"},
-     {sonidoSuave: "https://radio4.domint.net:8090/stream"}
+     {sonidoSuave: "https://radio4.domint.net:8090/stream"},
+     {power: "https://radio4.domint.net:8096/stream"}
 ]
   
 const RadioStation = () => {
@@ -166,6 +168,15 @@ const RadioStation = () => {
                                           <Nav.Link eventKey="raicesradio">
                                           <img src={RaicesRadioFM} width={'70px'} alt=""/>
                                           <h5>Raices 102.9 FM</h5>
+                                          </Nav.Link>
+                                      </div>
+                                    </Nav.Item>
+
+                                    <Nav.Item>
+                                      <div className="tab-button">
+                                          <Nav.Link eventKey="power">
+                                          <img src={PowerFM} width={'70px'} alt=""/>
+                                          <h5>Power 103.7 FM</h5>
                                           </Nav.Link>
                                       </div>
                                     </Nav.Item>
@@ -327,6 +338,16 @@ const RadioStation = () => {
                                       <ReactAudioPlayer 
                                         src={liveRadioData[10].raices}
                                         autoPlay={activeTab === 'raicesradio'}
+                                        onPlay={(e) => handleAudioPlay(e.target)} 
+                                        controls 
+                                      />
+                                    </Tab.Pane>
+
+                                    <Tab.Pane eventKey="power">
+                                      <img src={PowerFM} width={'70px'} alt="" className="logo-center"/>
+                                      <ReactAudioPlayer 
+                                        src={liveRadioData[16].power}
+                                        autoPlay={activeTab === 'power'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         controls 
                                       />
