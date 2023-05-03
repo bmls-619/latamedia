@@ -97,7 +97,7 @@ const ReactVideoPlayer = () => {
                                     <div className="tab-button">
                                         <Nav.Link eventKey="certv">
                                             <img src={RTVDLogo} width={'70px'} alt=""/>
-                                            <h5>CERTV</h5>
+                                            <h5>RTVD</h5>
                                         </Nav.Link>
                                     </div>
                                     </Nav.Item>
