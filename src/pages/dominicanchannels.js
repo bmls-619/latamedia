@@ -1,5 +1,6 @@
 import React,{useState, useRef} from "react";
 import ReactPlayer from 'react-player';
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import Col from 'react-bootstrap/Col';
@@ -279,7 +280,9 @@ const ReactVideoPlayer = () => {
                                             width='90%'
                                             height='100%'
                                         />
-                                
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://teleantillas.com.do" target="_blank"> https://www.teleantillas.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="certv">
@@ -293,6 +296,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://rtvd.gob.do" target="_blank">https://www.rtvd.gob.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="telemicro">
@@ -307,6 +313,11 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="Telemicro 5"
                                         />
+
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://telemicro.com.do/telemicro-en-vivo/" target="_blank">https://www.telemicro.com.do</Button>
+                                        </div>
+
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="antena7">
@@ -320,6 +331,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://www.antena7.com.do/" target="_blank">https://www.antena7.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                       <Tab.Pane eventKey="colorvision">
@@ -343,6 +357,9 @@ const ReactVideoPlayer = () => {
                                                 }
                                             }}*/
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://colorvision.com.do/" target="_blank">colorvision.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="telesistema">
@@ -357,6 +374,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="Telesistema 11"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://telesistema11.com.do/" target="_blank">https://telesistema11.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="telecentro">
@@ -370,6 +390,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://telecentro.com.do/" target="_blank">https://www.telecentro.com.do</Button>
+                                        </div>
                                 </Tab.Pane>
 
                                     <Tab.Pane eventKey="digital15">
@@ -383,6 +406,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://telemicro.com.do/digital-15-en-vivo/" target="_blank">https://www.telemicro.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="cinevision">
@@ -396,6 +422,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://canal19.do/" target="_blank">https://www.canal19.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
 
@@ -410,6 +439,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="http://telefuturo.com.do/home/" target="_blank">http://telefuturo.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="canal25">
@@ -423,9 +455,10 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://www.canal25rd.com/" target="_blank">https://www.canal25rd.com</Button>
+                                        </div>
                                     </Tab.Pane>
-
-                                     
 
                                     <Tab.Pane eventKey="teleuniverso">
 
@@ -439,6 +472,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="Teleuniverso 29"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://teleuniversotv.com/" target="_blank">https://teleuniversotv.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="cdn">
@@ -453,6 +489,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="CDN 37"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://cdn.com.do/" target="_blank">https://www.cdn.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="cdndeportes">
@@ -467,6 +506,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="CDN Deportes"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://cdndeportes.com.do/" target="_blank">https://cdndeportes.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
 
@@ -482,6 +524,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="TeleradioAmerica 45"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://teleradioamerica.com/" target="_blank">https://teleradioamerica.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="ame47">
@@ -496,6 +541,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="Ame 47"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://amecanal47.com/" target="_blank">https://www.amecanal47.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="rnn">
@@ -509,6 +557,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://rnn.com.do/" target="_blank">https://www.rnn.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="carivision">
@@ -522,6 +573,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="http://carivision.online/" target="_blank">http://www.carivision.online</Button>
+                                        </div>
                                 </Tab.Pane>
 
 
@@ -536,6 +590,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://senalestv.com/" target="_blank">https://www.senalestv.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                         <Tab.Pane eventKey="sitv">
@@ -548,6 +605,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://sitv.com.do/" target="_blank">https://www.sitv.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
                                     
                             </Tab.Content>
@@ -561,79 +621,3 @@ const ReactVideoPlayer = () => {
 };
 
 export default ReactVideoPlayer;
-
-
-/*const Colorvision = {
-    "embedUrl": "https://www.dailymotion.com/embed/video/x7gy059"
-}
-
-const Telemicro = {
-    "embedUrl": "https://tunzilla.com/http://51.81.93.239:8084/hls/tmicro.m3u8"
-}
-
-const DigitalQuince = {
-    "embedUrl": "https://tunzilla.com/http://51.81.93.239:8084/hls/d15.m3u8"
-}
-
-const Telecentro = {
-  "embedUrl": "https://tunzilla.com/http://51.81.93.239:8084/hls/telecentro.m3u8"
-};
-
-const CDN = {
-    "embedUrl": "https://dacastmmd.mmdlive.lldns.net/dacastmmd/5f85ae10c62d4be3a5edbf483cb04f25/playlist.m3u8"
-}
-
-const CDNDeportes = {
-    "embedUrl": "https://tunzilla.com/http://51.81.93.29:8084/hls/cdnsm.m3u8"
-}
-
-const Telesistema = {
-    "embedUrl": "https://tunzilla.com/http://51.81.93.239:8084/hls/tsistemas.m3u8"
-}
-
-const Canal25 = {
-    "embedUrl": "https://ss3.domint.net:3150/c25_str/canal25/chunklist_w293253969.m3u8"
-}
-
-const Teleuniverso = {
-    "embedUrl": "https://teleuniversotv.streamgato.us:3110/live/teleuniversotvlive.m3u8"
-}
-
-const TeleradioAmerica = {
-  //"@context": "http://schema.org",
-  //"@type": "VideoObject",
-  //"name": "Teleradio America Canal 45 en Vivo",
-  //"description": "Ver Teleradio America Canal 45 en vivo gratis, disfruta de toda su programación online.",
-  //"thumbnailUrl": "https://canalesdominicanos.live/template/images/radios/teleradio_america_canal_45.jpg",
-  //"uploadDate": "2023-04-20 14:31:37",
-  //"contentUrl": "https://canalesdominicanos.live/teleradio-america-canal-45/",
-  "embedUrl": "https://live.teledom.info:3625/live/tra45live.m3u8"
-};
-
-const RTVD = {
-    "embedUrl": "https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8"
-}
-
-const Teleantilla = {
-     "embedUrl": "https://tunzilla.com/http://51.81.93.239:8084/hls/tantillas.m3u8"
-}
-
-const AtenaLatina = {
-    "embedUrl": "https://tunzilla.com/http://51.81.106.157:8084/hls/alatina.m3u8"
-}
-
-const Ame47 = {
-    "embedUrl": "https://ss9.domint.net:3040/ame_str/amecanal47/chunklist_w1220930584.m3u8"
-}
-
-const Telefuturo = {
-    "embedUrl": "https://ss9.domint.net:3054/tf_str/telefuturo/chunklist_w719910685.m3u8"
-}
-
-const CineVision = {
-    "embedUrl": "https://live.teledom.info:3713/live/cinevisionlive.m3u8"
-}
-
-const SenalesTV = {
-    "embedUrl": "https://live.teledom.info/live-stream-video-widget/senalestv"
-}*/

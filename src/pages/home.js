@@ -1,5 +1,6 @@
 import React,{useState, useRef} from "react";
 import ReactPlayer from 'react-player';
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import Col from 'react-bootstrap/Col';
@@ -279,7 +280,9 @@ const ReactVideoPlayer = () => {
                                             width='90%'
                                             height='100%'
                                         />
-                                
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://teleantillas.com.do" target="_blank"> https://www.teleantillas.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="certv">
@@ -293,6 +296,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://rtvd.gob.do" target="_blank">https://www.rtvd.gob.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="telemicro">
@@ -307,6 +313,11 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="Telemicro 5"
                                         />
+
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://telemicro.com.do/telemicro-en-vivo/" target="_blank">https://www.telemicro.com.do</Button>
+                                        </div>
+
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="antena7">
@@ -320,6 +331,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://www.antena7.com.do/" target="_blank">https://www.antena7.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                       <Tab.Pane eventKey="colorvision">
@@ -343,6 +357,9 @@ const ReactVideoPlayer = () => {
                                                 }
                                             }}*/
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://colorvision.com.do/" target="_blank">colorvision.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="telesistema">
@@ -357,6 +374,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="Telesistema 11"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://telesistema11.com.do/" target="_blank">https://telesistema11.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="telecentro">
@@ -370,6 +390,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://telecentro.com.do/" target="_blank">https://www.telecentro.com.do</Button>
+                                        </div>
                                 </Tab.Pane>
 
                                     <Tab.Pane eventKey="digital15">
@@ -383,6 +406,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://telemicro.com.do/digital-15-en-vivo/" target="_blank">https://www.telemicro.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="cinevision">
@@ -396,6 +422,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://canal19.do/" target="_blank">https://www.canal19.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
 
@@ -410,6 +439,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="http://telefuturo.com.do/home/" target="_blank">http://telefuturo.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="canal25">
@@ -423,9 +455,10 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://www.canal25rd.com/" target="_blank">https://www.canal25rd.com</Button>
+                                        </div>
                                     </Tab.Pane>
-
-                                     
 
                                     <Tab.Pane eventKey="teleuniverso">
 
@@ -439,6 +472,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="Teleuniverso 29"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://teleuniversotv.com/" target="_blank">https://teleuniversotv.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="cdn">
@@ -453,6 +489,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="CDN 37"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://cdn.com.do/" target="_blank">https://www.cdn.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="cdndeportes">
@@ -467,6 +506,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="CDN Deportes"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://cdndeportes.com.do/" target="_blank">https://cdndeportes.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
 
@@ -482,6 +524,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="TeleradioAmerica 45"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://teleradioamerica.com/" target="_blank">https://teleradioamerica.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="ame47">
@@ -496,6 +541,9 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                             //title="Ame 47"
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://amecanal47.com/" target="_blank">https://www.amecanal47.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="rnn">
@@ -509,6 +557,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://rnn.com.do/" target="_blank">https://www.rnn.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="carivision">
@@ -522,6 +573,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="http://carivision.online/" target="_blank">http://www.carivision.online</Button>
+                                        </div>
                                 </Tab.Pane>
 
 
@@ -536,6 +590,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://senalestv.com/" target="_blank">https://www.senalestv.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                         <Tab.Pane eventKey="sitv">
@@ -548,6 +605,9 @@ const ReactVideoPlayer = () => {
                                             width='85%'
                                             height='100%'
                                         />
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://sitv.com.do/" target="_blank">https://www.sitv.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
                                     
                             </Tab.Content>
