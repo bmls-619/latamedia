@@ -472,7 +472,7 @@ const ReactVideoPlayer = () => {
                                             //title="Teleuniverso 29"
                                         />
                                         <div className="button-center">
-                                            <Button variant="info" href="https://teleuniversotv.com/" target="_blank">https://teleuniversotv.com</Button>
+                                            <Button variant="info" href="https://teleuniversotv.com/" target="_blank">https://www.teleuniversotv.com</Button>
                                         </div>
                                     </Tab.Pane>
 
