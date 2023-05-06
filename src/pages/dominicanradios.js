@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import ReactAudioPlayer from 'react-audio-player';
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import Col from 'react-bootstrap/Col';
@@ -239,8 +240,11 @@ const RadioStation = () => {
                                         src={liveRadioData[0].amor} 
                                         autoPlay={activeTab === 'amorfm'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
-                                        controls 
+                                        controls={true} 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://amorfm91.com/" target="_blank"> https://www.amorfm91.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="cdnradio">
@@ -251,6 +255,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)}  
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://cdnradio.com.do/" target="_blank">https://www.cdnradio.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="puravida">
@@ -261,6 +268,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://puravidafm.net/" target="_blank">https://www.puravidafm.net</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="independenciafm">
@@ -271,6 +281,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://telemicro.com.do/independencia-93-3/" target="_blank">https://www.telemicro.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="kq945">
@@ -281,6 +294,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)}
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://kq94.net/" target="_blank">https://www.kq94.net/</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="lakalle">
@@ -291,6 +307,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)}
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://telemicro.com.do/la-kalle-107-3/" target="_blank">https://www.telemicro.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="ritmo96">
@@ -301,6 +320,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)}
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://ritmo96.com/" target="_blank">https://www.ritmo96.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="rumba985">
@@ -311,6 +333,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://www.rumba985fm.com/" target="_blank">https://www.rumba985fm.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="alofokefm">
@@ -321,6 +346,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)}
                                         controls={true} 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://alofoke.fm/" target="_blank">https://www.alofoke.fm</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="Z101">
@@ -331,6 +359,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://z101digital.com/" target="_blank">https://www.z101digital.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="raicesradio">
@@ -341,6 +372,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://emisoraraices.org.do/" target="_blank">https://www.emisoraraices.org.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="power">
@@ -351,6 +385,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://www.power1037.com/" target="_blank">https://www.power1037.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="mixx">
@@ -361,6 +398,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)}
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="http://mixx1045fm.com/" target="_blank">http://www.mixx1045fm.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                      <Tab.Pane eventKey="mortal1049">
@@ -371,6 +411,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)}
                                         controls 
                                       />
+                                       <div className="button-center1">
+                                            <Button variant="info" href="https://telemicro.com.do/mortal-104-9/" target="_blank">https://www.telemicro.com.do</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="labakana">
@@ -381,6 +424,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)}
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://www.labakana105.com/" target="_blank">https://www.labakana105.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="zolfm">
@@ -391,6 +437,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://zolfm.com/" target="_blank">https://www.zolfm.com</Button>
+                                        </div>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="sonidosuave">
@@ -401,6 +450,9 @@ const RadioStation = () => {
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         controls 
                                       />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="http://sonidosuave.com/" target="_blank">http://www.sonidosuave.com</Button>
+                                        </div>
                                     </Tab.Pane> 
  
                             </Tab.Content>

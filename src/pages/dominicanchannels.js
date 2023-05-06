@@ -269,8 +269,8 @@ const ReactVideoPlayer = () => {
 
                             <Col sm={9}>
                                 <Tab.Content className="video-player-container">
+                                    
                                     <Tab.Pane eventKey="teleantillas">
-                                        
                                         <ReactPlayer
                                             url={liveTvData[0].teleantillas}
                                             controls={true}
@@ -286,7 +286,6 @@ const ReactVideoPlayer = () => {
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="certv">
-
                                         <ReactPlayer
                                             url={liveTvData[1].certv}
                                             controls={true}

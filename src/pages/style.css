@@ -83,7 +83,27 @@ h5{
 
 .button-center{
 
-    transform: translate(20%, -10%);
+    /*transform: translate(20%, -10%);*/
+    position: fixed;
+    top: 100%;
+    left: 23%
+}
+
+.button-center1 {
+
+    position: fixed;
+    top: 61%;
+    left: 30%
+}
+
+.logo-center {
+
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    top: 35%;
+    left: 55%
 }
 
 /*.tab-button:hover{
