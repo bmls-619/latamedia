@@ -357,8 +357,8 @@ const ReactVideoPlayer = () => {
                                                 }
                                             }}*/
                                         />
-                                        <div className="button-center">
-                                            <Button variant="info" href="https://colorvision.com.do/" target="_blank">colorvision.com.do</Button>
+                                        <div className="button-center-channel9">
+                                            <Button variant="info" href="https://colorvision.com.do/" target="_blank">https://www.colorvision.com.do</Button>
                                         </div>
                                     </Tab.Pane>
 
@@ -375,7 +375,7 @@ const ReactVideoPlayer = () => {
                                             //title="Telesistema 11"
                                         />
                                         <div className="button-center">
-                                            <Button variant="info" href="https://telesistema11.com.do/" target="_blank">https://telesistema11.com.do</Button>
+                                            <Button variant="info" href="https://telesistema11.com.do/" target="_blank">https://www.telesistema11.com.do</Button>
                                         </div>
                                     </Tab.Pane>
 
@@ -440,7 +440,7 @@ const ReactVideoPlayer = () => {
                                             height='100%'
                                         />
                                         <div className="button-center">
-                                            <Button variant="info" href="http://telefuturo.com.do/home/" target="_blank">http://telefuturo.com.do</Button>
+                                            <Button variant="info" href="http://telefuturo.com.do/home/" target="_blank">http://www.telefuturo.com.do</Button>
                                         </div>
                                     </Tab.Pane>
 
