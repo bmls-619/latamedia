@@ -28,6 +28,7 @@ import Ame47Logo from './logos/ame47.png';
 import CarivisionLogo from './logos/carivision.png'
 import SenalesTVLogo from './logos/senalestv.png'
 import SiTVLogo from './logos/sitv.png'
+import CanalSol from './logos/canaldelsol.png'
 
 const liveTvData = [
 
@@ -50,7 +51,8 @@ const liveTvData = [
     {rnn: "https://ss2.domint.net:3202/rnn_str/canal27/playlist.m3u8"},
     {carivision: "https://ss5.domint.net:3174/car_str/carivision/playlist.m3u8"},
     {senalestv: "https://live.teledom.info:4000/live/senalestvlive.m3u8?DVR"},
-    {SiTV: "https://tunzilla.com/http://51.81.93.239:8084/hls/sitv2.m3u8"}
+    {SiTV: "https://tunzilla.com/http://51.81.93.239:8084/hls/sitv2.m3u8"},
+    {Sol: "https://dacastmmd.mmdlive.lldns.net/dacastmmd/5a08806485a34fb0bc9dcffbb55f0fa8/playlist.m3u8"}
 ];
 
 const ReactVideoPlayer = () => {   
@@ -108,6 +110,15 @@ const ReactVideoPlayer = () => {
                                         <Nav.Link eventKey="telemicro">
                                         <img src={TelemicroLogo} width={'50px'} alt=""/> 
                                         <h5>Telemicro</h5>
+                                        </Nav.Link>
+                                    </div>
+                                    </Nav.Item>
+
+                                    <Nav.Item>
+                                    <div className="tab-button">
+                                        <Nav.Link eventKey="canaldelsol">
+                                        <img src={CanalSol} width={'70px'} alt=""/> 
+                                        <h5>Canal Del Sol</h5>
                                         </Nav.Link>
                                     </div>
                                     </Nav.Item>
@@ -269,8 +280,8 @@ const ReactVideoPlayer = () => {
 
                             <Col sm={9}>
                                 <Tab.Content className="video-player-container">
+                                    
                                     <Tab.Pane eventKey="teleantillas">
-                                        
                                         <ReactPlayer
                                             url={liveTvData[0].teleantillas}
                                             controls={true}
@@ -286,7 +297,6 @@ const ReactVideoPlayer = () => {
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="certv">
-
                                         <ReactPlayer
                                             url={liveTvData[1].certv}
                                             controls={true}
@@ -316,6 +326,24 @@ const ReactVideoPlayer = () => {
 
                                         <div className="button-center">
                                             <Button variant="info" href="https://telemicro.com.do/telemicro-en-vivo/" target="_blank">https://www.telemicro.com.do</Button>
+                                        </div>
+
+                                    </Tab.Pane>
+
+                                    <Tab.Pane eventKey="canaldelsol">
+
+                                        <ReactPlayer
+                                            url={liveTvData[20].Sol}
+                                            controls={true}
+                                            onPlay={() => handleVideoPlay(20)}
+                                            ref={(el) => (videoRefs.current[20] = el)}
+                                            playing={activeTab === "canaldelsol"}
+                                            width='85%'
+                                            height='100%'
+                                        />
+
+                                        <div className="button-center">
+                                            <Button variant="info" href="https://canaldelsol.com/canal-en-vivo/" target="_blank">https://www.canaldelsol.com</Button>
                                         </div>
 
                                     </Tab.Pane>
