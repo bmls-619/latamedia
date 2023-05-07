@@ -46,7 +46,7 @@ const liveTvData = [
     {cdn: "https://dacastmmd.mmdlive.lldns.net/dacastmmd/5f85ae10c62d4be3a5edbf483cb04f25/playlist.m3u8"},
     {cdn_deportes: "https://tunzilla.com/http://51.81.93.29:8084/hls/cdnsm.m3u8"},
     {tra: "https://live.teledom.info:3625/live/tra45live.m3u8"},
-    {ame47: "https://ss9.domint.net:3040/ame_str/amecanal47/manifest.m3u8?DVR"},
+    {ame47: "https://ss9.domint.net:3040/ame_str/amecanal47/chunklist_w1220930584.m3u8"},
     {rnn: "https://ss2.domint.net:3202/rnn_str/canal27/playlist.m3u8"},
     {carivision: "https://ss5.domint.net:3174/car_str/carivision/playlist.m3u8"},
     {senalestv: "https://live.teledom.info:4000/live/senalestvlive.m3u8?DVR"},
