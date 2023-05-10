@@ -25,6 +25,7 @@ import ZolFM from './logos/zolfm.png';
 import SonidoSuaveFM from './logos/sonidosuave.png';
 import RumbaFM from './logos/rumba985fm.png'
 import PowerFM from './logos/power-103.png'
+import RadioVenFM from './logos/radioven.png'
 
 const liveRadioData = [
 
@@ -44,7 +45,8 @@ const liveRadioData = [
      {laBakana: "https://radio4.domint.net:8030/stream"},
      {zol: "https://rss3.domint.net:8010/stream"},
      {sonidoSuave: "https://radio4.domint.net:8090/stream"},
-     {power: "https://radio4.domint.net:8096/stream"}
+     {power: "https://radio4.domint.net:8096/stream"},
+     {ven: "https://streaming.serveraudio.net:2000/stream/radioven1200"}
 ]
   
 const RadioStation = () => {
@@ -196,6 +198,15 @@ const RadioStation = () => {
                                           <Nav.Link eventKey="mortal1049">
                                           <img src={MortalFM} width={'70px'} alt=""/>
                                           <h5>Mortal 104.9 FM</h5>
+                                          </Nav.Link>
+                                      </div>
+                                    </Nav.Item>
+
+                                    <Nav.Item>
+                                      <div className="tab-button">
+                                          <Nav.Link eventKey="radioven">
+                                          <img src={RadioVenFM} width={'70px'} alt=""/>
+                                          <h5>Radio Ven 105.5 FM</h5>
                                           </Nav.Link>
                                       </div>
                                     </Nav.Item>
@@ -452,6 +463,19 @@ const RadioStation = () => {
                                       />
                                         <div className="button-center1">
                                             <Button variant="info" href="http://sonidosuave.com/" target="_blank">http://www.sonidosuave.com</Button>
+                                        </div>
+                                    </Tab.Pane> 
+
+                                    <Tab.Pane eventKey="radioven">
+                                      <img src={RadioVenFM} width={'70px'} alt="" className="logo-center"/>
+                                      <ReactAudioPlayer 
+                                        src={liveRadioData[17].ven} 
+                                        autoPlay={activeTab === 'radioven'}
+                                        onPlay={(e) => handleAudioPlay(e.target)} 
+                                        controls 
+                                      />
+                                        <div className="button-center1">
+                                            <Button variant="info" href="https://radioven.com/" target="_blank">https://www.radioven.com</Button>
                                         </div>
                                     </Tab.Pane> 
  
