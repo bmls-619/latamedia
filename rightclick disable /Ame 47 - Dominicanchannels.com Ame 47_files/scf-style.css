@@ -1,0 +1,32 @@
+.scf-form .required {
+	color: red;
+	font-size: 12px;
+}
+
+.scf-form .scf-right {
+	display: inline;
+	line-height: 2em;
+}
+
+.scf-form  option {
+	font-size: 12px;
+}
+
+.scf-sum {
+	padding:  0 5px 0 5px;
+	margin:  0 5px 0 5px;
+}
+
+.scf-title {
+	padding: 10px 0 10px 0;	
+}
+
+#send h1 {
+	padding: 20px 0 20px 0;
+}
+
+@media screen and (max-width: 66.5em) { 
+	.scf-form  input {
+		max-width:200px;
+	}
+}
