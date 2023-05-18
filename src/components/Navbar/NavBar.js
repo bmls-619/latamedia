@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import WebsiteLogo from './latamedia.png'
+import WebsiteLogo from './latammedia1.png'
 //import Button from 'react-bootstrap/Button';
 
 const  NavBar = () => {
@@ -19,7 +19,7 @@ const  NavBar = () => {
     <Navbar key={expand} bg="dark" variant="dark" collapseOnSelect expand={expand} sticky="top" >
       <Container fluid>
         {/* <Navbar.Brand href="/">Dominican TV/Radio</Navbar.Brand>*/}
-        <Navbar.Brand href="/"><img src={WebsiteLogo} width={'200px'} height={'35px'} alt=""/></Navbar.Brand>
+        <Navbar.Brand href="/"><img src={WebsiteLogo} width={'200px'} height={'24px'} alt=""/></Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
         <Navbar.Offcanvas 
               id={`offcanvasNavbar-expand-${expand}`} 
