@@ -56,6 +56,15 @@ const liveTvData = [
     {Sol: "https://dacastmmd.mmdlive.lldns.net/dacastmmd/5a08806485a34fb0bc9dcffbb55f0fa8/playlist.m3u8"}
 ];
 
+const CustomPlayerControls = ({ title }) => {
+  return (
+    <div>
+      <h2>{title}</h2>
+      {/* Add other custom controls as needed */}
+    </div>
+  );
+};
+
 const ReactVideoPlayer = () => {   
 
         const videoRefs = useRef([]);
@@ -289,6 +298,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(0)}
                                             ref={(el) => (videoRefs.current[0] = el)}
                                             playing={activeTab === 'teleantillas'}
+                                            playIcon={<CustomPlayerControls title="TELEANTILLAS" />}
                                             width='90%'
                                             height='100%'
                                         />
@@ -304,6 +314,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(1)}
                                             ref={(el) => (videoRefs.current[1] = el)}
                                             playing={activeTab === "certv"}
+                                            playIcon={<CustomPlayerControls title="RDTV"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -320,6 +331,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(2)}
                                             ref={(el) => (videoRefs.current[2] = el)}
                                             playing={activeTab === "telemicro"}
+                                            playIcon={<CustomPlayerControls title="TELEMICRO"/>}
                                             width='85%'
                                             height='100%'
                                             //title="Telemicro 5"
@@ -339,6 +351,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(20)}
                                             ref={(el) => (videoRefs.current[20] = el)}
                                             playing={activeTab === "canaldelsol"}
+                                            playIcon={<CustomPlayerControls title="CANAL DEL SOL"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -357,6 +370,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(3)}
                                             ref={(el) => (videoRefs.current[3] = el)}
                                             playing={activeTab === "antena7"}
+                                            playIcon={<CustomPlayerControls title="ANTENA 7"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -399,6 +413,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(5)}
                                             ref={(el) => (videoRefs.current[5] = el)}
                                             playing={activeTab === "telesistema"}
+                                            playIcon={<CustomPlayerControls title="TELESISTEMA"/>}
                                             width='85%'
                                             height='100%'
                                             //title="Telesistema 11"
@@ -416,6 +431,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(6)}
                                             ref={(el) => (videoRefs.current[6] = el)}
                                             playing={activeTab === "telecentro"}
+                                            playIcon={<CustomPlayerControls title="TELECENTRO"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -432,6 +448,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(7)}
                                             ref={(el) => (videoRefs.current[7] = el)}
                                             playing={activeTab === "digital15"}
+                                            playIcon={<CustomPlayerControls title="DIGITAL 15"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -448,6 +465,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(8)}
                                             ref={(el) => (videoRefs.current[8] = el)}
                                             playing={activeTab === "cinevision"}
+                                            playIcon={<CustomPlayerControls title="CINEVISION"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -465,6 +483,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(9)}
                                             ref={(el) => (videoRefs.current[9] = el)}
                                             playing={activeTab === "telefuturo23"}
+                                            playIcon={<CustomPlayerControls title="TELEFUTURO"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -481,6 +500,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(10)}
                                             ref={(el) => (videoRefs.current[10] = el)}
                                             playing={activeTab === "canal25"}
+                                            playIcon={<CustomPlayerControls title="CANAL 25"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -497,6 +517,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(11)}
                                             ref={(el) => (videoRefs.current[11] = el)}
                                             playing={activeTab === "teleuniverso"}
+                                            playIcon={<CustomPlayerControls title="TELEUNIVERSO"/>}
                                            width='85%'
                                             height='100%'
                                             //title="Teleuniverso 29"
@@ -514,6 +535,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(12)}
                                             ref={(el) => (videoRefs.current[12] = el)}
                                             playing={activeTab === "cdn"}
+                                            playIcon={<CustomPlayerControls title="CDN"/>}
                                             width='85%'
                                             height='100%'
                                             //title="CDN 37"
@@ -531,6 +553,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(13)}
                                             ref={(el) => (videoRefs.current[13] = el)}
                                             playing={activeTab === "cdndeportes"}
+                                            playIcon={<CustomPlayerControls title="CDN DEPORTES"/>}
                                             width='85%'
                                             height='100%'
                                             //title="CDN Deportes"
@@ -549,6 +572,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(14)}
                                             ref={(el) => (videoRefs.current[14] = el)}
                                             playing={activeTab === "teleradioamerica"}
+                                            playIcon={<CustomPlayerControls title="TELERADIO AMERICA"/>}
                                             width='85%'
                                             height='100%'
                                             //title="TeleradioAmerica 45"
@@ -566,6 +590,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(15)}
                                             ref={(el) => (videoRefs.current[15] = el)}
                                             playing={activeTab === "ame47"}
+                                            playIcon={<CustomPlayerControls title="AMÉ 47"/>}
                                             width='85%'
                                             height='100%'
                                             //title="Ame 47"
@@ -583,6 +608,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(16)}
                                             ref={(el) => (videoRefs.current[16] = el)}
                                             playing={activeTab === "rnn"}
+                                            playIcon={<CustomPlayerControls title="RNN"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -599,6 +625,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(17)}
                                             ref={(el) => (videoRefs.current[17] = el)}
                                             playing={activeTab === "carivision"}
+                                            playIcon={<CustomPlayerControls title="CARIVISION"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -616,6 +643,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(18)}
                                             ref={(el) => (videoRefs.current[18] = el)}
                                             playing={activeTab === "senalestv"}
+                                            playIcon={<CustomPlayerControls title="SEÑALES TV"/>}
                                             width='85%'
                                             height='100%'
                                         />
@@ -631,6 +659,7 @@ const ReactVideoPlayer = () => {
                                             onPlay={() => handleVideoPlay(19)}
                                             ref={(el) => (videoRefs.current[19] = el)}
                                             playing={activeTab === "sitv"}
+                                            playIcon={<CustomPlayerControls title="SITV"/>}
                                             width='85%'
                                             height='100%'
                                         />
