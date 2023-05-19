@@ -59,6 +59,7 @@ const CustomPlayerTitle = ({title}) => {
   
 const RadioStation = () => {
 
+          const radioTitle = "RAICES RADIO"
           //const audioRefs = useRef([]);
           const [activeTab, setActiveTab] = useState('raicesradio');
           const [currentPlayingAudio, setCurrentPlayingAudio] = useState(null);
@@ -389,7 +390,7 @@ const RadioStation = () => {
                                         src={liveRadioData[10].raices}
                                         autoPlay={activeTab === 'raicesradio'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
-                                        playIcon={<CustomPlayerTitle title="RAICES RADIO" />}
+                                        playIcon={<CustomPlayerTitle title={radioTitle} />}
                                         controls 
                                       />
                                         <div className="button-center1">
