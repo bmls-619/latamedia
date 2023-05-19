@@ -337,6 +337,7 @@ const RadioStation = () => {
                                         autoPlay={activeTab === 'ritmo96'}
                                         onPlay={(e) => handleAudioPlay(e.target)}
                                         title="RITMO 96.5 FM"
+                                        imageUrl={Ritmo96FM}
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -393,7 +394,7 @@ const RadioStation = () => {
                                         autoPlay={activeTab === 'raicesradio'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         title="RAICES RADIO 102.9 FM"
-                                        imageURL={RaicesRadioFM}
+                                        imageUrl={RaicesRadioFM}
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -492,7 +493,7 @@ const RadioStation = () => {
                                         autoPlay={activeTab === 'radioven'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
                                         title="RADIO VEN 105.5 FM"
-                                        imageURL={RadioVenFM}
+                                        imageUrl={RadioVenFM}
                                         controls 
                                       />
                                         <div className="button-center1">
