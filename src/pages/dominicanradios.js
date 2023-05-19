@@ -49,17 +49,9 @@ const liveRadioData = [
      {ven: "https://streaming.serveraudio.net:2000/stream/radioven1200"}
 ]
 
-const CustomPlayerTitle = ({title}) => {
-    return (
-      <div>
-        <h2>{title}</h2>
-      </div>
-    );
-};
-  
 const RadioStation = () => {
 
-          const radioTitle = "RAICES RADIO"
+          
           //const audioRefs = useRef([]);
           const [activeTab, setActiveTab] = useState('raicesradio');
           const [currentPlayingAudio, setCurrentPlayingAudio] = useState(null);
@@ -260,6 +252,7 @@ const RadioStation = () => {
                                         src={liveRadioData[0].amor} 
                                         autoPlay={activeTab === 'amorfm'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
+                                        title="Amor 91.9 FM"
                                         controls={true} 
                                       />
                                         <div className="button-center1">
@@ -273,6 +266,7 @@ const RadioStation = () => {
                                         src={liveRadioData[1].cdn} 
                                         autoPlay={activeTab === 'cdnradio'}
                                         onPlay={(e) => handleAudioPlay(e.target)}  
+                                        title="CDN 92.5 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -286,6 +280,7 @@ const RadioStation = () => {
                                         src={liveRadioData[2].puraVida}
                                         autoPlay={activeTab === 'puravida'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
+                                        title="PURA VIDA 92.9 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -299,6 +294,7 @@ const RadioStation = () => {
                                         src={liveRadioData[3].independencia} 
                                         autoPlay={activeTab === 'independenciafm'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
+                                        title="INDEPENDENCIA 93.3 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -312,6 +308,7 @@ const RadioStation = () => {
                                         src={liveRadioData[4].kq} 
                                         autoPlay={activeTab === 'kq945'}
                                         onPlay={(e) => handleAudioPlay(e.target)}
+                                        title="KQ 94.5 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -325,6 +322,7 @@ const RadioStation = () => {
                                         src={liveRadioData[5].laKalle}
                                         autoPlay={activeTab === 'lakalle'}
                                         onPlay={(e) => handleAudioPlay(e.target)}
+                                        title="LA KALLE 96.3 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -338,6 +336,7 @@ const RadioStation = () => {
                                         src={liveRadioData[6].ritmo} 
                                         autoPlay={activeTab === 'ritmo96'}
                                         onPlay={(e) => handleAudioPlay(e.target)}
+                                        title="RITMO 96.5 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -351,6 +350,7 @@ const RadioStation = () => {
                                         src={liveRadioData[7].rumba} 
                                         autoPlay={activeTab === 'rumba985'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
+                                        title="RUMBA 98.5 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -364,6 +364,7 @@ const RadioStation = () => {
                                         src={liveRadioData[8].alofoke}
                                         autoPlay={activeTab === 'alofokefm'}
                                         onPlay={(e) => handleAudioPlay(e.target)}
+                                        title="ALOFOKE 99.3 FM"
                                         controls={true} 
                                       />
                                         <div className="button-center1">
@@ -377,6 +378,7 @@ const RadioStation = () => {
                                         src={liveRadioData[9].laz101}
                                         autoPlay={activeTab === 'Z101'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
+                                        title="LA Z101 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -390,7 +392,7 @@ const RadioStation = () => {
                                         src={liveRadioData[10].raices}
                                         autoPlay={activeTab === 'raicesradio'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
-                                        playIcon={<CustomPlayerTitle title={radioTitle} />}
+                                        title="RAICES RADIO 102.9 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -403,7 +405,8 @@ const RadioStation = () => {
                                       <ReactAudioPlayer 
                                         src={liveRadioData[16].power}
                                         autoPlay={activeTab === 'power'}
-                                        onPlay={(e) => handleAudioPlay(e.target)} 
+                                        onPlay={(e) => handleAudioPlay(e.target)}
+                                        title="POWER 103.7 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -417,6 +420,7 @@ const RadioStation = () => {
                                         src={liveRadioData[11].mixx}
                                         autoPlay={activeTab === 'mixx'}
                                         onPlay={(e) => handleAudioPlay(e.target)}
+                                        title="MIXX 104.5 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -430,6 +434,7 @@ const RadioStation = () => {
                                         src={liveRadioData[12].mortal}
                                         autoPlay={activeTab === 'mortal1049'}
                                         onPlay={(e) => handleAudioPlay(e.target)}
+                                        title="MORTAL 104.9 FM"
                                         controls 
                                       />
                                        <div className="button-center1">
@@ -443,6 +448,7 @@ const RadioStation = () => {
                                         src={liveRadioData[13].laBakana}
                                         autoPlay={activeTab === 'labakana'}
                                         onPlay={(e) => handleAudioPlay(e.target)}
+                                        title="LA BAKANA 105.7 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -456,6 +462,7 @@ const RadioStation = () => {
                                         src={liveRadioData[14].zol}
                                         autoPlay={activeTab === 'zolfm'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
+                                        title="ZOLFM 106.5 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -469,6 +476,7 @@ const RadioStation = () => {
                                         src={liveRadioData[15].sonidoSuave} 
                                         autoPlay={activeTab === 'sonidosuave'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
+                                        title="SONIDO SUAVE FM"
                                         controls 
                                       />
                                         <div className="button-center1">
@@ -482,6 +490,7 @@ const RadioStation = () => {
                                         src={liveRadioData[17].ven} 
                                         autoPlay={activeTab === 'radioven'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
+                                        title="RADIO VEN 105.5 FM"
                                         controls 
                                       />
                                         <div className="button-center1">
