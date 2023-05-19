@@ -48,6 +48,14 @@ const liveRadioData = [
      {power: "https://radio4.domint.net:8096/stream"},
      {ven: "https://streaming.serveraudio.net:2000/stream/radioven1200"}
 ]
+
+const CustomPlayerTitle = ({title}) => {
+    return (
+      <div>
+        <h2>{title}</h2>
+      </div>
+    );
+};
   
 const RadioStation = () => {
 
@@ -381,6 +389,7 @@ const RadioStation = () => {
                                         src={liveRadioData[10].raices}
                                         autoPlay={activeTab === 'raicesradio'}
                                         onPlay={(e) => handleAudioPlay(e.target)} 
+                                        playIcon={<CustomPlayerTitle title="RAICES RADIO" />}
                                         controls 
                                       />
                                         <div className="button-center1">
